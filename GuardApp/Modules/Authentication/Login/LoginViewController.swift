@@ -86,7 +86,7 @@ extension LoginViewController {
             self?.viewModel.password = password ?? ""
         }.store(in: &subscribers)
         
-        self.viewModel.$isInputValid.sink { [weak self] isValid in
+        self.viewModel.$isInputValid.sink { isValid in
             //            self?.nextButton.isEnabled = isValid
         }.store(in: &subscribers)
         

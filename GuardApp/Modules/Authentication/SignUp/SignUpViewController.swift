@@ -91,7 +91,7 @@ extension SignUpViewController {
             self?.viewModel.confirmPassword = confirmPassword ?? ""
         }.store(in: &subscribers)
         
-        self.viewModel.$isInputValid.sink { [weak self] isValid in
+        self.viewModel.$isInputValid.sink { isValid in
             //            self?.nextButton.isEnabled = isValid
         }.store(in: &subscribers)
         

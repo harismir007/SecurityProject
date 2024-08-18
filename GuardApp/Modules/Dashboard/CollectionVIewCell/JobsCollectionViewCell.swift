@@ -36,7 +36,7 @@ class JobsCollectionViewCell: UICollectionViewCell {
 
 extension JobsCollectionViewCell: CellUpdating {
     func update(_ data: CellData) {
-        var item = data as? JobsCollectionViewCellItem
+        let item = data as? JobsCollectionViewCellItem
         self.jobTitleLabel.text = item?.jobTitle
         self.jobDescriptionLabel.text = item?.jobLocation
         self.jobTimingLabel.text = item?.jobTiming

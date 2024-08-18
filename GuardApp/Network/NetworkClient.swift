@@ -42,7 +42,7 @@ class NetworkClient {
                     }
                     break
                 case .failure(let error):
-                    print("failure")
+                    print("failure", error)
                     
                     completion(nil, "Our service seems to be inaccessible. Please check your internet connection and try again. We apologize for the inconvenience.")
                     break
