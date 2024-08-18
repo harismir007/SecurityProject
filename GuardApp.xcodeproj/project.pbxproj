@@ -66,6 +66,10 @@
 		04F3D0962C5EE31400D5BDCA /* JobsDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3D0952C5EE31400D5BDCA /* JobsDetailViewModel.swift */; };
 		078B31F12C71D15100F20E3E /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 078B31F02C71D15100F20E3E /* FSCalendar */; };
 		078B31F42C71D17600F20E3E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 078B31F32C71D17600F20E3E /* Alamofire */; };
+		078B31F72C71E0B600F20E3E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078B31F62C71E0B600F20E3E /* CalendarViewController.swift */; };
+		078B31FB2C71EC7800F20E3E /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078B31FA2C71EC7800F20E3E /* NetworkClient.swift */; };
+		078B31FD2C71EE0D00F20E3E /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078B31FC2C71EE0D00F20E3E /* LoginModel.swift */; };
+		078B31FF2C71F09C00F20E3E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078B31FE2C71F09C00F20E3E /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +132,10 @@
 		04B51ED72C5ED60700950FD7 /* SOSTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSTableViewCellModel.swift; sourceTree = "<group>"; };
 		04F3D0932C5EE29200D5BDCA /* JobsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsDetailViewController.swift; sourceTree = "<group>"; };
 		04F3D0952C5EE31400D5BDCA /* JobsDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsDetailViewModel.swift; sourceTree = "<group>"; };
+		078B31F62C71E0B600F20E3E /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		078B31FA2C71EC7800F20E3E /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		078B31FC2C71EE0D00F20E3E /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		078B31FE2C71F09C00F20E3E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +220,7 @@
 		04969CBC2C58AEF2002D5874 /* GuardApp */ = {
 			isa = PBXGroup;
 			children = (
+				078B31F82C71EC4E00F20E3E /* Network */,
 				04969CCB2C58AEF4002D5874 /* Info.plist */,
 				044085312C5A8A780039A86C /* General */,
 				04969CD52C58F773002D5874 /* Application */,
@@ -254,6 +263,7 @@
 				04969CDC2C5916C8002D5874 /* ViewControllerFactory.swift */,
 				04969CC12C58AEF2002D5874 /* BaseViewController.swift */,
 				047A77BA2C6C70CF00DD1F46 /* TabBarViewController.swift */,
+				078B31FE2C71F09C00F20E3E /* Constants.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -281,6 +291,7 @@
 		04969CDB2C5907DB002D5874 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				078B31F52C71E0B600F20E3E /* CalendarView */,
 				04B51ECA2C5ED31100950FD7 /* HomeView */,
 				047A77BC2C6D3CAD00DD1F46 /* AssignJobsView */,
 				04B51EC92C5ED2FA00950FD7 /* JobsView */,
@@ -384,6 +395,23 @@
 			path = JobDetailView;
 			sourceTree = "<group>";
 		};
+		078B31F52C71E0B600F20E3E /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				078B31F62C71E0B600F20E3E /* CalendarViewController.swift */,
+			);
+			path = CalendarView;
+			sourceTree = "<group>";
+		};
+		078B31F82C71EC4E00F20E3E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				078B31FA2C71EC7800F20E3E /* NetworkClient.swift */,
+				078B31FC2C71EE0D00F20E3E /* LoginModel.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -478,12 +506,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				078B31F72C71E0B600F20E3E /* CalendarViewController.swift in Sources */,
+				078B31FD2C71EE0D00F20E3E /* LoginModel.swift in Sources */,
 				04B51EC82C5EC8FB00950FD7 /* JobsViewModel.swift in Sources */,
 				04969CE12C59482E002D5874 /* Fonts.swift in Sources */,
 				04F3D0942C5EE29200D5BDCA /* JobsDetailViewController.swift in Sources */,
 				044085332C5A8AA30039A86C /* TableViewDelegate.swift in Sources */,
 				04969CD42C58F765002D5874 /* CustomTextField.swift in Sources */,
 				04F3D0962C5EE31400D5BDCA /* JobsDetailViewModel.swift in Sources */,
+				078B31FF2C71F09C00F20E3E /* Constants.swift in Sources */,
 				04969CE92C594F87002D5874 /* BadgedButton.swift in Sources */,
 				04969CC22C58AEF2002D5874 /* BaseViewController.swift in Sources */,
 				044085402C5AA66E0039A86C /* CollectionViewDelegate.swift in Sources */,
@@ -507,6 +538,7 @@
 				044085422C5AA6960039A86C /* CollectionCellModel.swift in Sources */,
 				04B51EB62C5BB5FC00950FD7 /* UITextExtension.swift in Sources */,
 				04B51EB22C5BB08600950FD7 /* DashboardViewModel.swift in Sources */,
+				078B31FB2C71EC7800F20E3E /* NetworkClient.swift in Sources */,
 				04B51ED52C5ED5EE00950FD7 /* SOSTableViewCell.swift in Sources */,
 				044085352C5A8AC50039A86C /* CellModel.swift in Sources */,
 				044085462C5AA7300039A86C /* JobsCollectionViewCell.swift in Sources */,
@@ -660,7 +692,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y93783Q98T;
+				DEVELOPMENT_TEAM = 58KRLDGHLF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GuardApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -668,16 +700,21 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ButtonComponentSwiftUI.GuardApp;
+				PRODUCT_BUNDLE_IDENTIFIER = ButtonComponentSwiftUI.GuardApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -688,7 +725,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y93783Q98T;
+				DEVELOPMENT_TEAM = 58KRLDGHLF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GuardApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -696,16 +733,21 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ButtonComponentSwiftUI.GuardApp;
+				PRODUCT_BUNDLE_IDENTIFIER = ButtonComponentSwiftUI.GuardApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

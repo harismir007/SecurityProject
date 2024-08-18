@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import FSCalendar
 
 class CalendarViewController: BaseViewController {
     
@@ -15,6 +16,7 @@ class CalendarViewController: BaseViewController {
     var tableViewDelegate: TableViewDelegate!
     private var subscribers: Set<AnyCancellable> = []
 
+    @IBOutlet weak var calendarView: FSCalendar!
     //MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!{
         didSet {
@@ -28,6 +30,7 @@ class CalendarViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpTableViewData()
+        calendarView.appearance.caseOptions = [.headerUsesUpperCase,.weekdayUsesSingleUpperCase]
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,8 +42,8 @@ extension CalendarViewController {
     private func setUpTableViewData() {
         var cellModels: [TableCellModel] = []
         let jobs = [
-            JobsTableViewCellItem(jobTitle: "Event Security Guard", jobLocation: "Downtown Office Building", hideIcons: true, hideCheckInButton: true, hideTimingStack: false),
-            JobsTableViewCellItem(jobTitle: "Warehouse Security Guard", jobLocation: "Lakeside Residential Complex", hideIcons: true, hideCheckInButton: false, hideTimingStack: false),
+            JobsTableViewCellItem(jobTitle: "Event Security Guard", jobLocation: "Downtown Office Building", hideIcons: false, hideCheckInButton: false, hideTimingStack: false),
+            JobsTableViewCellItem(jobTitle: "Warehouse Security Guard", jobLocation: "Lakeside Residential Complex", hideIcons: false, hideCheckInButton: false, hideTimingStack: false),
             JobsTableViewCellItem(jobTitle: "Construction Site Guard", jobLocation: "Riverside Corporate Park, Riverside Corporate Park, Riverside Corporate Park, Riverside Corporate Park", hideIcons: false, hideCheckInButton: false, hideTimingStack: false)
         ]
         

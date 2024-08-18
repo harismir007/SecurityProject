@@ -11,6 +11,8 @@ class LoginViewModel {
     
     //MARK: - Properties
     @Published var isInputValid: Bool = false
+    @Published var isLoggedInSuccessful: Bool = false
+    @Published var errorMessage: String = ""
     
     var email = "" {
         didSet {
@@ -24,9 +26,6 @@ class LoginViewModel {
         }
     }
     
-
-    
-    
     //MARK: - Initializer
     init() {
         
@@ -39,5 +38,33 @@ extension LoginViewModel {
     private func validateInput() {
         isInputValid = email.isNotEmpty &&
         password.isNotEmpty
+    }
+}
+
+extension LoginViewModel {
+    func callLogin() {
+        guard email.isValidEmailAddress() else {
+            errorMessage = "Enter a valid email address"
+            return
+        }
+        guard password.count > 6 else {
+            errorMessage = "Enter a valid Password greater than 6 characters"
+            return
+        }
+        
+        let param = ["email" : email,
+                     "Password": password] as NSDictionary
+        
+        NetworkClient.shared.fetchGenericData(parameters: param, service: Services.signin) { (response: LoginModel!, error: String!) in
+            if let error {
+                self.errorMessage = error
+                self.isLoggedInSuccessful = false
+                return
+            }
+            if let response {
+                Constants.userData = response.data
+                self.isLoggedInSuccessful = true
+            }
+        }
     }
 }

@@ -32,9 +32,11 @@ class JobsTableViewCell: UITableViewCell {
         }
     }
     
-    @IBOutlet weak var checkInButton: CustomButton!{
+    @IBOutlet weak var checkInButton: UIButton!{
         didSet {
             checkInButton.layer.cornerRadius = checkInButton.frame.height/2
+            checkInButton.layer.borderColor = UIColor.gray.cgColor
+            checkInButton.layer.borderWidth = 1
             checkInButton.clipsToBounds = true
         }
     }
@@ -44,6 +46,9 @@ class JobsTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        
+//        checkInButton.clipsToBounds = false
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
