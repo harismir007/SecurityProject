@@ -20,15 +20,15 @@ class JobsTableViewCell: UITableViewCell {
     @IBOutlet weak var jobTitleLabel: UILabel!
     @IBOutlet weak var jobLocationLabel: UILabel!
     @IBOutlet weak var jobTimingLabel: UILabel!
-
+    @IBOutlet weak var priceLabel: UILabel!
     ///ImageViews
     @IBOutlet weak var locationIcon: UIImageView!
     @IBOutlet weak var clockIcon: UIImageView!
-    
     ///Buttons
     @IBOutlet weak var viewJobButton: UIButton!{
         didSet {
             viewJobButton.layer.cornerRadius = viewJobButton.frame.height/2
+            viewJobButton.layer.borderColor = UIColor.appPrimaryColor.cgColor
         }
     }
     
@@ -46,14 +46,12 @@ class JobsTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
-        
-//        checkInButton.clipsToBounds = false
+        // checkInButton.clipsToBounds = false
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     

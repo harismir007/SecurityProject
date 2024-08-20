@@ -291,8 +291,8 @@
 		04969CDB2C5907DB002D5874 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				078B31F52C71E0B600F20E3E /* CalendarView */,
 				04B51ECA2C5ED31100950FD7 /* HomeView */,
+				078B31F52C71E0B600F20E3E /* CalendarView */,
 				047A77BC2C6D3CAD00DD1F46 /* AssignJobsView */,
 				04B51EC92C5ED2FA00950FD7 /* JobsView */,
 				04F3D0922C5EE27700D5BDCA /* JobDetailView */,

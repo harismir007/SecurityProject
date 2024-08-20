@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -291,15 +291,27 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAV-2t-UFo">
+                                                        <rect key="frame" x="124.33333333333334" y="40.000000000000107" width="112.33333333333334" height="68.333333333333314"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <connections>
+                                                            <action selector="uploadLicenseAction:" destination="Tgg-YW-r9z" eventType="touchUpInside" id="GPs-QH-Igq"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" name="AppSecondaryColor"/>
                                                 <constraints>
                                                     <constraint firstItem="Nu9-PA-ern" firstAttribute="centerY" secondItem="ykh-RK-bDf" secondAttribute="centerY" id="Aeb-aY-60j"/>
                                                     <constraint firstAttribute="trailing" secondItem="ykh-RK-bDf" secondAttribute="trailing" constant="8" id="BL3-du-BZG"/>
+                                                    <constraint firstItem="OAV-2t-UFo" firstAttribute="top" secondItem="Nu9-PA-ern" secondAttribute="top" id="KLN-qc-4hf"/>
                                                     <constraint firstItem="ykh-RK-bDf" firstAttribute="top" secondItem="a7p-9f-942" secondAttribute="top" constant="8" id="MCV-Ff-WNO"/>
+                                                    <constraint firstItem="OAV-2t-UFo" firstAttribute="trailing" secondItem="Nu9-PA-ern" secondAttribute="trailing" id="Yu4-kw-v3y"/>
                                                     <constraint firstAttribute="height" constant="148" id="bOa-Ja-Gi9"/>
+                                                    <constraint firstItem="OAV-2t-UFo" firstAttribute="bottom" secondItem="Nu9-PA-ern" secondAttribute="bottom" id="cQc-jp-5XI"/>
                                                     <constraint firstAttribute="bottom" secondItem="ykh-RK-bDf" secondAttribute="bottom" constant="8" id="fd3-cM-1Jd"/>
                                                     <constraint firstItem="ykh-RK-bDf" firstAttribute="leading" secondItem="a7p-9f-942" secondAttribute="leading" constant="8" id="hnr-K3-Ajs"/>
+                                                    <constraint firstItem="OAV-2t-UFo" firstAttribute="leading" secondItem="Nu9-PA-ern" secondAttribute="leading" id="iY5-a7-WdX"/>
                                                     <constraint firstItem="Nu9-PA-ern" firstAttribute="centerX" secondItem="ykh-RK-bDf" secondAttribute="centerX" id="oX7-Kr-jPv"/>
                                                 </constraints>
                                             </view>
@@ -320,6 +332,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="createAccountAction:" destination="Tgg-YW-r9z" eventType="touchUpInside" id="hxB-1B-sT9"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have account? Login account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLx-Qg-4bV">
                                                 <rect key="frame" x="0.0" y="996.00000000000011" width="361" height="19.666666666666629"/>
@@ -533,7 +548,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1MC-M0-8Av">
-                                <rect key="frame" x="16" y="79" width="361" height="146"/>
+                                <rect key="frame" x="16" y="79" width="361" height="193"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4ta-DA-NUo">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="88"/>
@@ -566,29 +581,40 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWR-c4-OKn" customClass="CustomButton" customModule="GuardApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="96" width="361" height="50"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0h-c1-aiT">
+                                        <rect key="frame" x="0.0" y="96" width="361" height="20"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="SEO-QK-fOm"/>
+                                            <constraint firstAttribute="height" constant="20" id="uUg-Cw-Z2n"/>
                                         </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lST-AE-V3L" customClass="CustomButton" customModule="GuardApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="143" width="361" height="50"/>
+                                        <color key="backgroundColor" red="0.4549019608" green="0.3226409012" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="5SM-JY-1Pa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Next" image="arrow.forward" catalog="system">
-                                            <color key="titleColor" systemColor="linkColor"/>
+                                        <state key="normal" title="Send OTP">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <buttonConfiguration key="configuration" style="plain" title="Send OTP">
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="localized" value="Next"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginAction:" destination="lbd-Xx-bkX" eventType="touchUpInside" id="Z0F-12-I32"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="lST-AE-V3L" firstAttribute="leading" secondItem="1MC-M0-8Av" secondAttribute="leading" id="0ef-DI-zQS"/>
                                     <constraint firstItem="4ta-DA-NUo" firstAttribute="leading" secondItem="1MC-M0-8Av" secondAttribute="leading" id="7WN-Au-diq"/>
-                                    <constraint firstAttribute="trailing" secondItem="LWR-c4-OKn" secondAttribute="trailing" id="AlP-71-Ozn"/>
+                                    <constraint firstAttribute="trailing" secondItem="lST-AE-V3L" secondAttribute="trailing" id="8Qw-fF-Lkb"/>
+                                    <constraint firstItem="a0h-c1-aiT" firstAttribute="leading" secondItem="1MC-M0-8Av" secondAttribute="leading" id="8f3-vv-a9E"/>
                                     <constraint firstAttribute="trailing" secondItem="4ta-DA-NUo" secondAttribute="trailing" id="Bif-xO-IbA"/>
-                                    <constraint firstItem="LWR-c4-OKn" firstAttribute="leading" secondItem="1MC-M0-8Av" secondAttribute="leading" id="uK5-AP-JsX"/>
+                                    <constraint firstAttribute="trailing" secondItem="a0h-c1-aiT" secondAttribute="trailing" id="JVf-SC-az5"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -610,7 +636,6 @@
         <image name="BorderViewImage" width="936" height="396"/>
         <image name="GuardAppIcon" width="288" height="288"/>
         <image name="addIcon" width="132" height="132"/>
-        <image name="arrow.forward" catalog="system" width="128" height="95"/>
         <image name="birthday" width="72" height="72"/>
         <image name="cnic" width="72" height="72"/>
         <image name="email" width="72" height="72"/>
@@ -627,9 +652,6 @@
         <namedColor name="AppTextColor">
             <color red="0.29800000786781311" green="0.29800000786781311" blue="0.29800000786781311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

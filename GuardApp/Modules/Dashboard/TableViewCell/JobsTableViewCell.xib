@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -26,26 +25,41 @@
                                 <rect key="frame" x="10" y="10" width="310" height="78"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="h4I-Q2-NIH">
-                                        <rect key="frame" x="0.0" y="0.0" width="196" height="67.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="196" height="78"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Security Guard" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="On5-7g-coU">
-                                                <rect key="frame" x="0.0" y="0.0" width="133.33333333333334" height="15.666666666666666"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="133.33333333333334" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EtZ-c7-8WW">
-                                                <rect key="frame" x="0.0" y="23.666666666666664" width="172.33333333333334" height="18"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fS6-4F-WOm">
+                                                <rect key="frame" x="0.0" y="8" width="146.33333333333334" height="18"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pinLocation" translatesAutoresizingMaskIntoConstraints="NO" id="czC-HE-hTR">
-                                                        <rect key="frame" x="0.0" y="0.0" width="18" height="18"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Downtown Office Building" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXj-Wj-opr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="146.33333333333334" height="14.333333333333334"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="iCB-8O-riT"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EtZ-c7-8WW">
+                                                <rect key="frame" x="0.0" y="34" width="150" height="18"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="czC-HE-hTR">
+                                                        <rect key="frame" x="0.0" y="0.99999999999999822" width="18" height="16.666666666666664"/>
+                                                        <color key="tintColor" name="AppTextColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="18" id="5G6-He-ggz"/>
                                                             <constraint firstAttribute="width" constant="18" id="i9Y-DG-AFP"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Downtown Office Building" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mum-PP-746">
-                                                        <rect key="frame" x="26" y="0.0" width="146.33333333333334" height="14.333333333333334"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:00 AM - 04:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mum-PP-746">
+                                                        <rect key="frame" x="26" y="0.0" width="124" height="14.333333333333334"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -58,20 +72,20 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ke9-Oe-lTu">
-                                                <rect key="frame" x="0.0" y="49.666666666666671" width="150" height="18"/>
+                                                <rect key="frame" x="0.0" y="60" width="83.333333333333329" height="18"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9cA-Hh-7FW">
-                                                        <rect key="frame" x="0.0" y="0.99999999999999822" width="18" height="16.666666666666664"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banknote" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9cA-Hh-7FW">
+                                                        <rect key="frame" x="0.0" y="2.3333333333333321" width="18" height="13.666666666666668"/>
                                                         <color key="tintColor" name="AppTextColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="18" id="j5x-AS-iQb"/>
                                                             <constraint firstAttribute="width" constant="18" id="py8-yu-XBB"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:00 AM - 04:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgf-OU-6sf">
-                                                        <rect key="frame" x="26" y="0.0" width="124" height="14.333333333333334"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 15.00/hr" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgf-OU-6sf">
+                                                        <rect key="frame" x="26.000000000000004" y="0.0" width="57.333333333333343" height="14.333333333333334"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                        <color key="textColor" systemColor="systemRedColor"/>
+                                                        <color key="textColor" name="AppTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -159,21 +173,22 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="bgView" destination="Ej7-ZG-ALk" id="mOD-0O-TIp"/>
-                <outlet property="checkInButton" destination="UCI-JP-gZ4" id="8Po-e0-gsO"/>
+                <outlet property="checkInButton" destination="p2D-mz-lNd" id="63z-k6-GXa"/>
                 <outlet property="clockIcon" destination="9cA-Hh-7FW" id="StU-SO-N0F"/>
-                <outlet property="jobLocationLabel" destination="Mum-PP-746" id="Xcx-vK-dpV"/>
-                <outlet property="jobTimingLabel" destination="Hgf-OU-6sf" id="ZmV-Z8-1I3"/>
+                <outlet property="jobLocationLabel" destination="QXj-Wj-opr" id="KYP-9J-o7F"/>
+                <outlet property="jobTimingLabel" destination="Mum-PP-746" id="0Xv-pG-nFd"/>
                 <outlet property="jobTitleLabel" destination="On5-7g-coU" id="dQa-fe-r43"/>
                 <outlet property="locationIcon" destination="czC-HE-hTR" id="wqP-rd-PVb"/>
+                <outlet property="priceLabel" destination="Hgf-OU-6sf" id="pIE-FB-GFf"/>
                 <outlet property="timingStackView" destination="ke9-Oe-lTu" id="qRS-aC-zKt"/>
-                <outlet property="viewJobButton" destination="p2D-mz-lNd" id="Gpy-G8-PhM"/>
+                <outlet property="viewJobButton" destination="UCI-JP-gZ4" id="YvC-IP-Mxv"/>
             </connections>
-            <point key="canvasLocation" x="59.541984732824424" y="-28.169014084507044"/>
+            <point key="canvasLocation" x="61" y="-17"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="banknote" catalog="system" width="128" height="78"/>
         <image name="clock" catalog="system" width="128" height="123"/>
-        <image name="pinLocation" width="54" height="54"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -182,9 +197,6 @@
         </namedColor>
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

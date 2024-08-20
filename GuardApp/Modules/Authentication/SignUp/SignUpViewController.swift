@@ -59,6 +59,14 @@ class SignUpViewController: BaseViewController {
             navigationController.pushViewController(loginUpVC, animated: true)
         }
     }
+    
+    @IBAction func uploadLicenseAction(_ sender: Any) {
+        // TODO: - Image Picker
+    }
+    
+    @IBAction func createAccountAction(_ sender: Any) {
+        // TODO: - Call Signup API
+    }
 }
 
 extension SignUpViewController {

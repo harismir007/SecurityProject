@@ -49,6 +49,7 @@ class LoginViewController: UIViewController {
     
     //MARK: - Actions
     @IBAction func loginAction(_ sender: Any) {
+        //navigateToDashboard()
         self.viewModel.callLogin()
     }
     

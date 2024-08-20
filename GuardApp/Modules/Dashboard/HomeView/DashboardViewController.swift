@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-class DashboardViewController: UIViewController {
+class DashboardViewController: BaseViewController {
     
     //MARK: - Properties
     var viewModel: DashboardViewModel!
@@ -117,9 +117,9 @@ extension DashboardViewController {
     private func setUpTableViewData() {
         var cellModels: [TableCellModel] = []
         let jobs = [
-            JobsTableViewCellItem(jobTitle: "Event Security Guard", jobLocation: "Downtown Office Building", hideIcons: false, hideCheckInButton: false, hideTimingStack: false),
-            JobsTableViewCellItem(jobTitle: "Warehouse Security Guard", jobLocation: "Lakeside Residential Complex", hideIcons: false, hideCheckInButton: false, hideTimingStack: false),
-            JobsTableViewCellItem(jobTitle: "Construction Site Guard", jobLocation: "Riverside Corporate Park, Riverside Corporate Park, Riverside Corporate Park, Riverside Corporate Park", hideIcons: false, hideCheckInButton: false, hideTimingStack: false)
+            JobsTableViewCellItem(jobTitle: "Event Security Guard", jobLocation: "Downtown Office Building", hideIcons: false, hideCheckInButton: true, hideTimingStack: false),
+            JobsTableViewCellItem(jobTitle: "Warehouse Security Guard", jobLocation: "Lakeside Residential Complex", hideIcons: false, hideCheckInButton: true, hideTimingStack: false),
+            JobsTableViewCellItem(jobTitle: "Construction Site Guard", jobLocation: "Riverside Corporate Park, Riverside Corporate Park, Riverside Corporate Park, Riverside Corporate Park", hideIcons: false, hideCheckInButton: true, hideTimingStack: false)
         ]
         
         let models = jobs.map { JobsTableViewCellModel(data: $0) }

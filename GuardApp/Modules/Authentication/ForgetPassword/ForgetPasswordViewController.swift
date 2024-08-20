@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-class ForgetPasswordViewController: UIViewController {
+class ForgetPasswordViewController: BaseViewController {
     //MARK: - Properties
     var viewModel: ForgetPasswordViewModel!
     let viewControllerFactory = ViewControllerFactory()

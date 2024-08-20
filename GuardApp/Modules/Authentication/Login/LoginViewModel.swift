@@ -48,7 +48,7 @@ extension LoginViewModel {
             return
         }
         guard password.count > 6 else {
-            errorMessage = "Enter a valid Password greater than 6 characters"
+            errorMessage = "Enter a valid password greater than 6 characters"
             return
         }
         
