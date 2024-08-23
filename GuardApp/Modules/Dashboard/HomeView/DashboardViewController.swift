@@ -11,6 +11,12 @@ import Combine
 class DashboardViewController: BaseViewController {
     
     //MARK: - Properties
+    private var sideMenuViewController: SideMenuViewController!
+    private var sideMenuRevealWidth: CGFloat = 260
+    private let paddingForRotation: CGFloat = 150
+    private var isExpanded: Bool = false
+    
+    
     var viewModel: DashboardViewModel!
     var tableViewDelegate: TableViewDelegate!
     var collectionViewDelegate: CollectionViewDelegate!

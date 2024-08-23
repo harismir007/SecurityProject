@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041E150D2C79315E00561E7C /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E150C2C79315E00561E7C /* SideMenuViewController.swift */; };
 		044085332C5A8AA30039A86C /* TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044085322C5A8AA30039A86C /* TableViewDelegate.swift */; };
 		044085352C5A8AC50039A86C /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044085342C5A8AC50039A86C /* CellModel.swift */; };
 		044085392C5A8B350039A86C /* JobsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044085372C5A8B350039A86C /* JobsTableViewCell.swift */; };
@@ -73,6 +74,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041E150C2C79315E00561E7C /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		044085322C5A8AA30039A86C /* TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegate.swift; sourceTree = "<group>"; };
 		044085342C5A8AC50039A86C /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 		044085372C5A8B350039A86C /* JobsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsTableViewCell.swift; sourceTree = "<group>"; };
@@ -151,6 +153,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041E150B2C79314200561E7C /* SideMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				041E150C2C79315E00561E7C /* SideMenuViewController.swift */,
+			);
+			path = SideMenuView;
+			sourceTree = "<group>";
+		};
 		044085312C5A8A780039A86C /* General */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +301,7 @@
 		04969CDB2C5907DB002D5874 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				041E150B2C79314200561E7C /* SideMenuView */,
 				04B51ECA2C5ED31100950FD7 /* HomeView */,
 				078B31F52C71E0B600F20E3E /* CalendarView */,
 				047A77BC2C6D3CAD00DD1F46 /* AssignJobsView */,
@@ -510,6 +521,7 @@
 				078B31FD2C71EE0D00F20E3E /* LoginModel.swift in Sources */,
 				04B51EC82C5EC8FB00950FD7 /* JobsViewModel.swift in Sources */,
 				04969CE12C59482E002D5874 /* Fonts.swift in Sources */,
+				041E150D2C79315E00561E7C /* SideMenuViewController.swift in Sources */,
 				04F3D0942C5EE29200D5BDCA /* JobsDetailViewController.swift in Sources */,
 				044085332C5A8AA30039A86C /* TableViewDelegate.swift in Sources */,
 				04969CD42C58F765002D5874 /* CustomTextField.swift in Sources */,
