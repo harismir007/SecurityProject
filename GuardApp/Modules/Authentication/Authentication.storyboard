@@ -631,6 +631,85 @@
             </objects>
             <point key="canvasLocation" x="1567" y="-754"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="zQg-GY-wO4">
+            <objects>
+                <viewController id="bTX-xg-S3T" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5ek-LO-0lK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cMf-3S-Q0y">
+                                <rect key="frame" x="16" y="79" width="361" height="193"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ydR-OF-D9m">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="88"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter OTP" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfR-12-CmT">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
+                                                <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                                <color key="textColor" name="AppTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n3g-xh-Wht" customClass="SVPinView" customModule="SVPinView">
+                                                <rect key="frame" x="0.0" y="32" width="361" height="56"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="aPP-HJ-hvB"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r7I-vn-z0P">
+                                        <rect key="frame" x="0.0" y="96" width="361" height="20"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="g2c-ar-JiV"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZE-4V-dG1" customClass="CustomButton" customModule="GuardApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="143" width="361" height="50"/>
+                                        <color key="backgroundColor" red="0.4549019608" green="0.3226409012" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="UNQ-9s-vXK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Confirm OTP">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localized" value="Next"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginAction:" destination="lbd-Xx-bkX" eventType="touchUpInside" id="V4J-u7-DAP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="kZE-4V-dG1" secondAttribute="trailing" id="CEv-eW-t7V"/>
+                                    <constraint firstItem="ydR-OF-D9m" firstAttribute="leading" secondItem="cMf-3S-Q0y" secondAttribute="leading" id="HhJ-GF-2af"/>
+                                    <constraint firstItem="r7I-vn-z0P" firstAttribute="leading" secondItem="cMf-3S-Q0y" secondAttribute="leading" id="Inr-yF-Dda"/>
+                                    <constraint firstAttribute="trailing" secondItem="ydR-OF-D9m" secondAttribute="trailing" id="hQr-g4-kF1"/>
+                                    <constraint firstItem="kZE-4V-dG1" firstAttribute="leading" secondItem="cMf-3S-Q0y" secondAttribute="leading" id="mti-il-rt6"/>
+                                    <constraint firstAttribute="trailing" secondItem="r7I-vn-z0P" secondAttribute="trailing" id="v4Y-xZ-6WN"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="02o-3R-lRv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="02o-3R-lRv" firstAttribute="trailing" secondItem="cMf-3S-Q0y" secondAttribute="trailing" constant="16" id="PEX-5N-2CW"/>
+                            <constraint firstItem="cMf-3S-Q0y" firstAttribute="top" secondItem="02o-3R-lRv" secondAttribute="top" constant="20" id="eZa-0J-8AA"/>
+                            <constraint firstItem="cMf-3S-Q0y" firstAttribute="leading" secondItem="02o-3R-lRv" secondAttribute="leading" constant="16" id="i1Z-kP-fyy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GRv-3s-qaS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2244" y="-754"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BorderViewImage" width="936" height="396"/>
