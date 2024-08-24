@@ -12,7 +12,7 @@ class Services{
     static var baseUrl = "http://127.0.0.1:8000/api/signin"
     
     static var signin = "signin"
-    static var register = "register"
+    static var signup = "register"
 }
 
 

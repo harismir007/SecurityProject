@@ -6,13 +6,14 @@
 //
 
 import Foundation
-
-class LoginViewModel {
+class ViewModel {
+    @Published var errorMessage: String = ""
+}
+class LoginViewModel: ViewModel {
     
     //MARK: - Properties
     @Published var isInputValid: Bool = false
     @Published var isLoggedInSuccessful: Bool = false
-    @Published var errorMessage: String = ""
     
     var email = "" {
         didSet {
@@ -27,7 +28,7 @@ class LoginViewModel {
     }
     
     //MARK: - Initializer
-    init() {
+    override init() {
         
     }
     

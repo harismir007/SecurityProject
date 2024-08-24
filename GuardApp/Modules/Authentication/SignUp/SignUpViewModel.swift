@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SignUpViewModel {
+class SignUpViewModel: ViewModel {
     
     //    MARK: - Properties
     
@@ -54,10 +54,10 @@ class SignUpViewModel {
     }
     
     @Published var isInputValid: Bool = false
-    
+    @Published var isSignUpSuccessful: Bool = false
     
     //MARK: - Initializer
-    init() {
+    override init() {
         
     }
     
@@ -74,4 +74,45 @@ extension SignUpViewModel {
         password.isNotEmpty &&
         confirmPassword.isNotEmpty
     }
+    
+    func callSignUp() {
+        guard email.isValidEmailAddress() else {
+            errorMessage = "Enter a valid email address"
+            return
+        }
+        guard password.count > 6, password == confirmPassword else {
+            errorMessage = "Enter a valid password greater than 6 characters"
+            return
+        }
+        
+        let param = [ "name"         : userName,
+                      "email"        : email,
+                      "username"     : userName,
+                      "password"     : password,
+                      "user_role"    : "",
+                      "status"       : "",
+                      "is_blocked"   : "",
+                      "dob"          : dateOfBirth,
+                      "gender"       : "",
+                      "first_name"   : "",
+                      "last_name"    : "",
+                      "contact_no"   : contactNumber,
+                      "address"      : "",
+                      "city"         : "",
+                      "permission"   : "",
+                      "joining_date" : "",
+                      "leaving_date" : "",] as NSDictionary
+        
+        NetworkClient.shared.fetchGenericData(parameters: param, service: Services.signup) { (response: SignUpModel!, error: String!) in
+            if let error {
+                self.errorMessage = error
+                self.isSignUpSuccessful = false
+                return
+            }
+            if let response {
+                self.isSignUpSuccessful = true
+            }
+        }
+    }
+
 }

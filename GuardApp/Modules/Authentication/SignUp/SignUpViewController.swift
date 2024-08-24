@@ -54,10 +54,7 @@ class SignUpViewController: BaseViewController {
     
     //MARK: - Actions
     @objc func tapLabel(gesture: UITapGestureRecognizer) {
-        if let navigationController = self.navigationController {
-            let loginUpVC = viewControllerFactory.loginViewController(navigationController: navigationController)
-            navigationController.pushViewController(loginUpVC, animated: true)
-        }
+        self.navigateToLogin()
     }
     
     @IBAction func uploadLicenseAction(_ sender: Any) {
@@ -65,7 +62,14 @@ class SignUpViewController: BaseViewController {
     }
     
     @IBAction func createAccountAction(_ sender: Any) {
-        // TODO: - Call Signup API
+        self.viewModel.callSignUp()
+    }
+    
+    private func navigateToLogin() {
+        if let navigationController = self.navigationController {
+            let loginUpVC = viewControllerFactory.loginViewController(navigationController: navigationController)
+            navigationController.pushViewController(loginUpVC, animated: true)
+        }
     }
 }
 
@@ -101,6 +105,14 @@ extension SignUpViewController {
         
         self.viewModel.$isInputValid.sink { isValid in
             //            self?.nextButton.isEnabled = isValid
+        }.store(in: &subscribers)
+        
+        self.viewModel.$errorMessage.sink { [weak self] errorMessage in
+            self?.showAlert(title: "Error", message: errorMessage)
+        }.store(in: &subscribers)
+        
+        self.viewModel.$isSignUpSuccessful.sink { [weak self]  isValid in
+            self?.navigateToLogin()
         }.store(in: &subscribers)
         
     }
