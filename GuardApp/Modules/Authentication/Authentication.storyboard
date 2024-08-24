@@ -43,7 +43,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0y-YW-e7l">
-                                <rect key="frame" x="16" y="239.66666666666669" width="361" height="926.33333333333326"/>
+                                <rect key="frame" x="16" y="239.66666666666669" width="361" height="926.33333333333348"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8EB-Da-wUS">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="1015.6666666666666"/>
@@ -691,6 +691,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="localized" value="Next"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="confirmOTPAction:" destination="bTX-xg-S3T" eventType="touchUpInside" id="aqa-ln-w75"/>
                                             <action selector="loginAction:" destination="lbd-Xx-bkX" eventType="touchUpInside" id="V4J-u7-DAP"/>
                                         </connections>
                                     </button>
@@ -714,6 +715,9 @@
                             <constraint firstItem="cMf-3S-Q0y" firstAttribute="leading" secondItem="02o-3R-lRv" secondAttribute="leading" constant="16" id="i1Z-kP-fyy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="otpView" destination="n3g-xh-Wht" id="jjv-Yf-ZSP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GRv-3s-qaS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -727,8 +731,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6UH-T6-0J5">
-                                <rect key="frame" x="16" y="79" width="361" height="357"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6UH-T6-0J5">
+                                <rect key="frame" x="16" y="79" width="361" height="275"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="J8T-Kc-1jh">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="88"/>
@@ -763,7 +767,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="LSX-DW-qUY">
-                                        <rect key="frame" x="0.0" y="96" width="361" height="88"/>
+                                        <rect key="frame" x="0.0" y="103" width="361" height="88"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKc-kV-ti0">
                                                 <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
@@ -794,15 +798,8 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWf-yI-EOo">
-                                        <rect key="frame" x="0.0" y="226" width="361" height="20"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="aWM-IU-gfC"/>
-                                        </constraints>
-                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1E-gR-fP3" customClass="CustomButton" customModule="GuardApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="307" width="361" height="50"/>
+                                        <rect key="frame" x="0.0" y="225" width="361" height="50"/>
                                         <color key="backgroundColor" red="0.4549019608" green="0.3226409012" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="whL-f7-hS9"/>
@@ -816,6 +813,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="localized" value="Next"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="changePasswordAction:" destination="Muk-bt-uUQ" eventType="touchUpInside" id="BBl-sZ-doC"/>
                                             <action selector="loginAction:" destination="lbd-Xx-bkX" eventType="touchUpInside" id="4Pj-eZ-R6X"/>
                                         </connections>
                                     </button>
@@ -824,8 +822,6 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="LSX-DW-qUY" secondAttribute="trailing" id="5Gj-IW-CNq"/>
                                     <constraint firstAttribute="trailing" secondItem="B1E-gR-fP3" secondAttribute="trailing" id="6p7-ed-TM7"/>
-                                    <constraint firstAttribute="trailing" secondItem="uWf-yI-EOo" secondAttribute="trailing" id="BKz-Jk-hYR"/>
-                                    <constraint firstItem="uWf-yI-EOo" firstAttribute="leading" secondItem="6UH-T6-0J5" secondAttribute="leading" id="IS7-29-fSM"/>
                                     <constraint firstItem="J8T-Kc-1jh" firstAttribute="leading" secondItem="6UH-T6-0J5" secondAttribute="leading" id="Lcy-RT-M5w"/>
                                     <constraint firstItem="LSX-DW-qUY" firstAttribute="leading" secondItem="6UH-T6-0J5" secondAttribute="leading" id="VbG-cz-FUL"/>
                                     <constraint firstItem="B1E-gR-fP3" firstAttribute="leading" secondItem="6UH-T6-0J5" secondAttribute="leading" id="oAi-Lp-hXh"/>
@@ -841,6 +837,10 @@
                             <constraint firstItem="6UH-T6-0J5" firstAttribute="leading" secondItem="T0e-Xt-Nx1" secondAttribute="leading" constant="16" id="vrI-H7-OtG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="UpN-Nf-re9" id="Q3H-qa-RhP"/>
+                        <outlet property="passwordTextField" destination="Q2F-Ya-7zh" id="YsR-NZ-a4G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EI9-qt-L88" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
