@@ -17,6 +17,8 @@ protocol ViewControllerFactoryProtocol {
     func signUpViewController(navigationController: UINavigationController) -> SignUpViewController
     func loginViewController(navigationController: UINavigationController) -> LoginViewController
     func forgetPasswordViewController(navigationController: UINavigationController) -> ForgetPasswordViewController
+    func otpViewController(navigationController: UINavigationController) -> OTPViewController
+    
     //MARK: - Dashboard
     func tabBarViewController(navigationController: UINavigationController) -> TabBarViewController 
     func dashboardViewController(navigationController: UINavigationController) -> DashboardViewController
@@ -50,6 +52,14 @@ class ViewControllerFactory: ViewControllerFactoryProtocol {
         viewController.title = "Forget Password"
         return viewController
     }
+    
+    func otpViewController(navigationController: UINavigationController) -> OTPViewController {
+        let viewController = Storyboard.authentication.instantiateViewController(identifier: OTPViewController.storyboardIdentifier) as! OTPViewController
+        //viewController.viewModel = ForgetPasswordViewModel()
+        viewController.title = "OTP"
+        return viewController
+    }
+ 
     
     //MARK: - Dashboard
     
