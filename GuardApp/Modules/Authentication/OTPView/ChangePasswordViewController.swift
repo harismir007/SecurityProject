@@ -8,22 +8,30 @@
 import UIKit
 
 class ChangePasswordViewController: BaseViewController {
-
+    //MARK: - Properties
+    let viewControllerFactory = ViewControllerFactory()
+    
+    
+    //MARK: - Outlets
+    @IBOutlet weak var passwordTextField: CustomTextField!
+    @IBOutlet weak var confirmPasswordTextField: CustomTextField!
+    
+    //MARK: - View Call
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //MARK: - Action
+    @IBAction func changePasswordAction(_ sender: Any) {
+        self.moveToLoginVC()
     }
-    */
+}
 
+extension ChangePasswordViewController {
+    func moveToLoginVC() {
+        if let navigationController = self.navigationController {
+            let loginVC = self.viewControllerFactory.loginViewController(navigationController: navigationController)
+            navigationController.pushViewController(loginVC, animated: true)
+        }
+    }
 }

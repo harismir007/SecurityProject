@@ -23,6 +23,7 @@ protocol ViewControllerFactoryProtocol {
     func loginViewController(navigationController: UINavigationController) -> LoginViewController
     func forgetPasswordViewController(navigationController: UINavigationController) -> ForgetPasswordViewController
     func otpViewController(navigationController: UINavigationController) -> OTPViewController
+    func changePasswordViewController(navigationController: UINavigationController) -> ChangePasswordViewController
     
     //MARK: - Dashboard
     func tabBarViewController(navigationController: UINavigationController) -> TabBarViewController 
@@ -67,8 +68,15 @@ class ViewControllerFactory: ViewControllerFactoryProtocol {
     
     func otpViewController(navigationController: UINavigationController) -> OTPViewController {
         let viewController = Storyboard.authentication.instantiateViewController(identifier: OTPViewController.storyboardIdentifier) as! OTPViewController
-        //viewController.viewModel = ForgetPasswordViewModel()
+        //viewController.viewModel = OTPViewModel()
         viewController.title = "OTP"
+        return viewController
+    }
+    
+    func changePasswordViewController(navigationController: UINavigationController) -> ChangePasswordViewController{
+        let viewController = Storyboard.authentication.instantiateViewController(identifier: ChangePasswordViewController.storyboardIdentifier) as! ChangePasswordViewController
+        //viewController.viewModel = ChangePasswordViewModel()
+        viewController.title = "Change Password"
         return viewController
     }
  
