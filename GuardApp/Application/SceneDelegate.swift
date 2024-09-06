@@ -29,7 +29,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let factory = ViewControllerFactory()
         let navigationController = UINavigationController()
-        let viewController = factory.loginViewController(navigationController: navigationController)
+        let viewController = factory.splashViewController(navigationController: navigationController)
         let navigation = UINavigationController(rootViewController: viewController)
         
         /// 4. Set the root view controller of the window with your view controller

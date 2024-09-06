@@ -14,14 +14,14 @@ class LoginViewModel: ViewModel {
     //MARK: - Properties
     @Published var isInputValid: Bool = false
     @Published var isLoggedInSuccessful: Bool = false
-    
-    var email = "" {
+
+    var email = "khrm.shahzad1994@gmail.com" {
         didSet {
             validateInput()
         }
     }
     
-    var password = "" {
+    var password = "123456" {
         didSet {
             validateInput()
         }
@@ -48,13 +48,13 @@ extension LoginViewModel {
             errorMessage = "Enter a valid email address"
             return
         }
-        guard password.count > 6 else {
+        guard password.count > 5 else {
             errorMessage = "Enter a valid password greater than 6 characters"
             return
         }
         
         let param = ["email" : email,
-                     "Password": password] as NSDictionary
+                     "password": password] as NSDictionary
         
         NetworkClient.shared.fetchGenericData(parameters: param, service: Services.signin) { (response: LoginModel!, error: String!) in
             if let error {

@@ -9,5 +9,5 @@ target 'GuardApp' do
    pod 'SVPinView', '~> 1.0'
    pod 'Alamofire', '~> 5.7.0'
    pod 'FSCalendar', '~> 2.8.0'
-
+   pod 'iOSDropDown'
 end

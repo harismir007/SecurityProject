@@ -1,24 +1,28 @@
 PODS:
   - Alamofire (5.7.1)
   - FSCalendar (2.8.4)
+  - iOSDropDown (0.4.0)
   - SVPinView (1.0.11)
 
 DEPENDENCIES:
   - Alamofire (~> 5.7.0)
   - FSCalendar (~> 2.8.0)
+  - iOSDropDown
   - SVPinView (~> 1.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - FSCalendar
+    - iOSDropDown
     - SVPinView
 
 SPEC CHECKSUMS:
   Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
   FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
+  iOSDropDown: ce9daa584eaa5567cafc1b633e3cc7eb6d9cea42
   SVPinView: 9b538d0ba68cdb092afe4f0f67ec84cbed079466
 
-PODFILE CHECKSUM: bcff74a0b28810b0fa155d993866f253bad801f2
+PODFILE CHECKSUM: 0542bf7de4aa1f0fb6716a592a8df8b5746e8329
 
 COCOAPODS: 1.15.2

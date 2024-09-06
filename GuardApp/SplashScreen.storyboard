@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WNn-vX-UuY">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="MOH-XP-4Hb">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="WNn-vX-UuY" customClass="SplashViewController" customModule="GuardApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5NW-Vk-5aH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="P3O-Hw-IfO">
+                                <rect key="frame" x="116.66666666666669" y="344.33333333333331" width="160" height="188.33333333333331"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GuardAppIcon" translatesAutoresizingMaskIntoConstraints="NO" id="nWm-zd-vkz">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="2tD-gc-IIA"/>
+                                            <constraint firstAttribute="height" constant="160" id="seR-nX-Yen"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guard App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2A-aD-NU4">
+                                        <rect key="frame" x="38.999999999999986" y="168.00000000000006" width="82" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8D3-6G-czD">
+                                <rect key="frame" x="16" y="773.66666666666663" width="361" height="36.333333333333371"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="HK2-FO-8Hg">
+                                        <rect key="frame" x="30" y="0.0" width="301" height="8"/>
+                                        <color key="tintColor" name="AppPrimaryColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="8" id="48O-RY-SPZ"/>
+                                        </constraints>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading, please wait" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjJ-RV-vbr">
+                                        <rect key="frame" x="103.33333333333333" y="15.999999999999998" width="154.66666666666669" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="HK2-FO-8Hg" secondAttribute="trailing" constant="30" id="EQd-fV-B4V"/>
+                                    <constraint firstItem="HK2-FO-8Hg" firstAttribute="leading" secondItem="8D3-6G-czD" secondAttribute="leading" constant="30" id="Egh-pD-Sx3"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gmS-GH-O9Y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="P3O-Hw-IfO" firstAttribute="centerX" secondItem="gmS-GH-O9Y" secondAttribute="centerX" id="QKj-bv-OHO"/>
+                            <constraint firstItem="gmS-GH-O9Y" firstAttribute="trailing" secondItem="8D3-6G-czD" secondAttribute="trailing" constant="16" id="Tv8-9U-hBr"/>
+                            <constraint firstItem="P3O-Hw-IfO" firstAttribute="centerY" secondItem="gmS-GH-O9Y" secondAttribute="centerY" id="gk7-Kt-0mX"/>
+                            <constraint firstItem="8D3-6G-czD" firstAttribute="leading" secondItem="gmS-GH-O9Y" secondAttribute="leading" constant="16" id="kH3-AI-uYi"/>
+                            <constraint firstItem="gmS-GH-O9Y" firstAttribute="bottom" secondItem="8D3-6G-czD" secondAttribute="bottom" constant="8" id="ni9-cg-UjW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DCn-e0-1jb"/>
+                    <connections>
+                        <outlet property="progressBar" destination="HK2-FO-8Hg" id="SdE-Wa-gvc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xmj-T6-mUk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626.7175572519084" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GuardAppIcon" width="288" height="288"/>
+        <namedColor name="AppPrimaryColor">
+            <color red="0.13300000131130219" green="0.3880000114440918" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

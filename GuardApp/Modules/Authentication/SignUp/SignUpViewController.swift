@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import iOSDropDown
 
 class SignUpViewController: BaseViewController {
     
@@ -17,21 +18,17 @@ class SignUpViewController: BaseViewController {
     
     //MARK: - Outlets
     ///TextFields
-    @IBOutlet weak var userNameTextField: CustomTextField!
-    @IBOutlet weak var cnicTextField: CustomTextField!
-    @IBOutlet weak var contactNumberTextField: CustomTextField!
-    @IBOutlet weak var dateOfBirthTextField: CustomTextField!
+    @IBOutlet weak var titleTextField: DropDown!
+    @IBOutlet weak var firstNameTextField: CustomTextField!
+    @IBOutlet weak var middleTextField: CustomTextField!
+    @IBOutlet weak var surnameTextField: CustomTextField!
+    @IBOutlet weak var genderSegmentControl: UISegmentedControl!
+    @IBOutlet weak var mobileNumberTextField: CustomTextField!
+    @IBOutlet weak var telephoneTextField: CustomTextField!
     @IBOutlet weak var emailTextField: CustomTextField!
     @IBOutlet weak var passwordTextField: CustomTextField!
     @IBOutlet weak var confirmPasswordTextField: CustomTextField!
-    
-    ///Views
-    @IBOutlet weak var uploadLicenseView: UIView!{
-        didSet {
-            uploadLicenseView.layer.cornerRadius = 15
-            uploadLicenseView.clipsToBounds = true
-        }
-    }
+    @IBOutlet weak var nationalInsuranceTextField: CustomTextField!
     
     ///Labels
     @IBOutlet weak var bottomLabel: UILabel! {
@@ -75,22 +72,31 @@ class SignUpViewController: BaseViewController {
 
 extension SignUpViewController {
     private func bindViews() {
-        userNameTextField.didChangeTextPublisher.sink { [weak self] userName in
+        titleTextField.didChangeTextPublisher.sink { [weak self] userName in
             self?.viewModel.userName = userName ?? ""
         }.store(in: &subscribers)
         
-        cnicTextField.didChangeTextPublisher.sink { [weak self] cnic in
+        firstNameTextField.didChangeTextPublisher.sink { [weak self] cnic in
             self?.viewModel.cnic = cnic ?? ""
         }.store(in: &subscribers)
         
-        contactNumberTextField.didChangeTextPublisher.sink { [weak self] contactNumber in
+        middleTextField.didChangeTextPublisher.sink { [weak self] contactNumber in
             self?.viewModel.contactNumber = contactNumber ?? ""
         }.store(in: &subscribers)
         
-        dateOfBirthTextField.didChangeTextPublisher.sink { [weak self] dateOfBirth in
+        surnameTextField.didChangeTextPublisher.sink { [weak self] contactNumber in
+            self?.viewModel.contactNumber = contactNumber ?? ""
+        }.store(in: &subscribers)
+
+        mobileNumberTextField.didChangeTextPublisher.sink { [weak self] dateOfBirth in
             self?.viewModel.dateOfBirth = dateOfBirth ?? ""
         }.store(in: &subscribers)
-        
+
+        telephoneTextField.didChangeTextPublisher.sink { [weak self] dateOfBirth in
+            self?.viewModel.dateOfBirth = dateOfBirth ?? ""
+        }.store(in: &subscribers)
+
+
         emailTextField.didChangeTextPublisher.sink { [weak self] email in
             self?.viewModel.email = email ?? ""
         }.store(in: &subscribers)
@@ -103,16 +109,24 @@ extension SignUpViewController {
             self?.viewModel.confirmPassword = confirmPassword ?? ""
         }.store(in: &subscribers)
         
+        nationalInsuranceTextField.didChangeTextPublisher.sink { [weak self] dateOfBirth in
+            self?.viewModel.dateOfBirth = dateOfBirth ?? ""
+        }.store(in: &subscribers)
+
+        
         self.viewModel.$isInputValid.sink { isValid in
             //            self?.nextButton.isEnabled = isValid
         }.store(in: &subscribers)
         
         self.viewModel.$errorMessage.sink { [weak self] errorMessage in
+            if errorMessage == "" { return }
             self?.showAlert(title: "Error", message: errorMessage)
         }.store(in: &subscribers)
         
         self.viewModel.$isSignUpSuccessful.sink { [weak self]  isValid in
-            self?.navigateToLogin()
+            if isValid {
+                self?.navigateToLogin()
+            }
         }.store(in: &subscribers)
         
     }

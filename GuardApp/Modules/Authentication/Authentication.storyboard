@@ -20,7 +20,7 @@
             <objects>
                 <viewController storyboardIdentifier="SignUpViewController" id="Tgg-YW-r9z" customClass="SignUpViewController" customModule="GuardApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6gv-3l-tnZ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="1200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="2500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kSN-6i-0iI">
@@ -43,21 +43,21 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0y-YW-e7l">
-                                <rect key="frame" x="16" y="239.66666666666669" width="361" height="926.33333333333326"/>
+                                <rect key="frame" x="16" y="239.66666666666674" width="361" height="2226.333333333333"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8EB-Da-wUS">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="1015.6666666666666"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="1578.6666666666667"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="d1t-Nr-gSl">
                                                 <rect key="frame" x="0.0" y="0.0" width="361" height="88"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2F-MU-FSQ">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2F-MU-FSQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
                                                         <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
                                                         <color key="textColor" name="AppTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZaK-EE-Nsr" customClass="CustomTextField" customModule="GuardApp" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZaK-EE-Nsr" customClass="DropDown" customModule="iOSDropDown">
                                                         <rect key="frame" x="0.0" y="32.000000000000028" width="361" height="56"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="56" id="Uov-eN-OJc"/>
@@ -74,27 +74,27 @@
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                                 <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftViewImage" value="person"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="rightViewImage" value="Vector-2"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1yb-Lp-CLD">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5wR-ii-Asb">
                                                 <rect key="frame" x="0.0" y="108.00000000000003" width="361" height="88"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CNIC" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3u-j2-2ez">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Wb-fK-Blw">
                                                         <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
                                                         <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
                                                         <color key="textColor" name="AppTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="123456789090" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZII-kP-2Kp" customClass="CustomTextField" customModule="GuardApp" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter first  name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="67Z-hU-NpW" customClass="CustomTextField" customModule="GuardApp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="32" width="361" height="56"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="56" id="dTt-jn-aff"/>
+                                                            <constraint firstAttribute="height" constant="56" id="Jg5-mf-cJz"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="name"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                 <real key="value" value="8"/>
@@ -103,29 +103,28 @@
                                                                 <real key="value" value="1"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                <color key="value" name="AppButtonBorderColor"/>
+                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftViewImage" value="cnic"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Lgr-KD-baY">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ogu-Pr-Wa1">
                                                 <rect key="frame" x="0.0" y="216" width="361" height="88"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact number" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgV-UW-SUI">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Middle name (optional )" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LdS-U3-tfu">
                                                         <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
                                                         <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
                                                         <color key="textColor" name="AppTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="+1 123456789" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jmR-3T-nTI" customClass="CustomTextField" customModule="GuardApp" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter middle name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CS0-14-IS5" customClass="CustomTextField" customModule="GuardApp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="32" width="361" height="56"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="56" id="Sxm-aT-KKu"/>
+                                                            <constraint firstAttribute="height" constant="56" id="oml-2P-xDp"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="name"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                 <real key="value" value="8"/>
@@ -134,29 +133,28 @@
                                                                 <real key="value" value="1"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                <color key="value" name="AppButtonBorderColor"/>
+                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftViewImage" value="phone"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Hg2-U3-Xbk">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="AaR-ik-efj">
                                                 <rect key="frame" x="0.0" y="324" width="361" height="88"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of birth" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouw-yN-1KK">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LastName" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXT-ns-1bw">
                                                         <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
                                                         <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
                                                         <color key="textColor" name="AppTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="SNIC / CNIC" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OCH-4Y-MFU" customClass="CustomTextField" customModule="GuardApp" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oam-7Z-Bt3" customClass="CustomTextField" customModule="GuardApp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="32" width="361" height="56"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="56" id="hB4-En-TXJ"/>
+                                                            <constraint firstAttribute="height" constant="56" id="aw6-mz-lw1"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="name"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                 <real key="value" value="8"/>
@@ -165,26 +163,46 @@
                                                                 <real key="value" value="1"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                <color key="value" name="AppButtonBorderColor"/>
+                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftViewImage" value="birthday"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Se0-Wc-rly">
-                                                <rect key="frame" x="0.0" y="432" width="361" height="88"/>
+                                                <rect key="frame" x="0.0" y="432" width="361" height="63"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbR-VF-LW6">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbR-VF-LW6">
                                                         <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
                                                         <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
                                                         <color key="textColor" name="AppTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username@guard.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9fx-75-UwZ" customClass="CustomTextField" customModule="GuardApp" customModuleProvider="target">
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WrH-PP-YjC">
+                                                        <rect key="frame" x="0.0" y="32" width="361" height="32"/>
+                                                        <segments>
+                                                            <segment title="Male"/>
+                                                            <segment title="Female"/>
+                                                            <segment title="Other"/>
+                                                        </segments>
+                                                        <color key="tintColor" name="AppPrimaryColor"/>
+                                                        <color key="selectedSegmentTintColor" name="AccentColor"/>
+                                                    </segmentedControl>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gOU-Q8-TW2">
+                                                <rect key="frame" x="0.0" y="515" width="361" height="88"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Number" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3E-mt-353">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                                        <color key="textColor" name="AppTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add mobile number " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Bb-nq-5uw" customClass="CustomTextField" customModule="GuardApp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="32" width="361" height="56"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="56" id="t7K-3u-jVs"/>
+                                                            <constraint firstAttribute="height" constant="56" id="9nd-kk-H2z"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
@@ -198,13 +216,72 @@
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                                 <color key="value" name="AppButtonBorderColor"/>
                                                             </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftViewImage" value="email"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="soI-EI-Sdb">
+                                                <rect key="frame" x="0.0" y="623" width="361" height="88"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telephone Number (optional)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRh-Yn-xHp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                                        <color key="textColor" name="AppTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="add telephone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8U9-7s-pUU" customClass="CustomTextField" customModule="GuardApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="32" width="361" height="56"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="56" id="bs4-ap-g0V"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="AppButtonBorderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wxN-2Q-IaT">
+                                                <rect key="frame" x="0.0" y="731" width="361" height="88"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTq-dV-FXf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                                        <color key="textColor" name="AppTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username@guard.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bfc-wm-l81" customClass="CustomTextField" customModule="GuardApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="32" width="361" height="56"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="56" id="cXd-Mw-isK"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="AppButtonBorderColor"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="B4q-TU-6Z7">
-                                                <rect key="frame" x="0.0" y="540" width="361" height="88"/>
+                                                <rect key="frame" x="0.0" y="839.00000000000011" width="361" height="88"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sj0-cy-h8J">
                                                         <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
@@ -236,7 +313,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="y0c-GS-l2Q">
-                                                <rect key="frame" x="0.0" y="648" width="361" height="88"/>
+                                                <rect key="frame" x="0.0" y="947.00000000000011" width="361" height="87.999999999999886"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm password" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRd-il-1HD">
                                                         <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
@@ -267,56 +344,128 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7p-9f-942">
-                                                <rect key="frame" x="0.0" y="756" width="361" height="148"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="u1k-hs-2rx">
+                                                <rect key="frame" x="0.0" y="1055" width="361" height="88"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BorderViewImage" translatesAutoresizingMaskIntoConstraints="NO" id="ykh-RK-bDf">
-                                                        <rect key="frame" x="8" y="8" width="345" height="132"/>
-                                                    </imageView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Nu9-PA-ern">
-                                                        <rect key="frame" x="124.33333333333334" y="40.000000000000107" width="112.33333333333334" height="68.333333333333314"/>
-                                                        <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addIcon" translatesAutoresizingMaskIntoConstraints="NO" id="tew-QF-aJJ">
-                                                                <rect key="frame" x="34.333333333333314" y="0.0" width="44" height="44"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="44" id="bEA-u8-q8b"/>
-                                                                    <constraint firstAttribute="height" constant="44" id="ha4-VQ-koq"/>
-                                                                </constraints>
-                                                            </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload license" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brb-9I-okC">
-                                                                <rect key="frame" x="0.0" y="48" width="112.33333333333333" height="20.333333333333329"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAV-2t-UFo">
-                                                        <rect key="frame" x="124.33333333333334" y="40.000000000000107" width="112.33333333333334" height="68.333333333333314"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <connections>
-                                                            <action selector="uploadLicenseAction:" destination="Tgg-YW-r9z" eventType="touchUpInside" id="GPs-QH-Igq"/>
-                                                        </connections>
-                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address Line 1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wg-XU-tq3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                                        <color key="textColor" name="AppTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="enter address line 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Jm-f1-xun" customClass="CustomTextField" customModule="GuardApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="32" width="361" height="56"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="56" id="bYp-u6-gYB"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="AppButtonBorderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
                                                 </subviews>
-                                                <color key="backgroundColor" name="AppSecondaryColor"/>
-                                                <constraints>
-                                                    <constraint firstItem="Nu9-PA-ern" firstAttribute="centerY" secondItem="ykh-RK-bDf" secondAttribute="centerY" id="Aeb-aY-60j"/>
-                                                    <constraint firstAttribute="trailing" secondItem="ykh-RK-bDf" secondAttribute="trailing" constant="8" id="BL3-du-BZG"/>
-                                                    <constraint firstItem="OAV-2t-UFo" firstAttribute="top" secondItem="Nu9-PA-ern" secondAttribute="top" id="KLN-qc-4hf"/>
-                                                    <constraint firstItem="ykh-RK-bDf" firstAttribute="top" secondItem="a7p-9f-942" secondAttribute="top" constant="8" id="MCV-Ff-WNO"/>
-                                                    <constraint firstItem="OAV-2t-UFo" firstAttribute="trailing" secondItem="Nu9-PA-ern" secondAttribute="trailing" id="Yu4-kw-v3y"/>
-                                                    <constraint firstAttribute="height" constant="148" id="bOa-Ja-Gi9"/>
-                                                    <constraint firstItem="OAV-2t-UFo" firstAttribute="bottom" secondItem="Nu9-PA-ern" secondAttribute="bottom" id="cQc-jp-5XI"/>
-                                                    <constraint firstAttribute="bottom" secondItem="ykh-RK-bDf" secondAttribute="bottom" constant="8" id="fd3-cM-1Jd"/>
-                                                    <constraint firstItem="ykh-RK-bDf" firstAttribute="leading" secondItem="a7p-9f-942" secondAttribute="leading" constant="8" id="hnr-K3-Ajs"/>
-                                                    <constraint firstItem="OAV-2t-UFo" firstAttribute="leading" secondItem="Nu9-PA-ern" secondAttribute="leading" id="iY5-a7-WdX"/>
-                                                    <constraint firstItem="Nu9-PA-ern" firstAttribute="centerX" secondItem="ykh-RK-bDf" secondAttribute="centerX" id="oX7-Kr-jPv"/>
-                                                </constraints>
-                                            </view>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="scI-Jn-iH1">
+                                                <rect key="frame" x="0.0" y="1163" width="361" height="88"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address Line 2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqi-2T-LAd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                                        <color key="textColor" name="AppTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="enter address line 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Dy-qQ-001" customClass="CustomTextField" customModule="GuardApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="32" width="361" height="56"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="56" id="wHO-rt-8vu"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="AppButtonBorderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fBS-4u-Vre">
+                                                <rect key="frame" x="0.0" y="1271" width="361" height="88"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Town/City" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDh-6N-i9A">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                                        <color key="textColor" name="AppTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="select city" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QmN-nz-k3F" customClass="CustomTextField" customModule="GuardApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="32" width="361" height="56"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="56" id="bPJ-4i-fDE"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="AppButtonBorderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="feZ-cZ-JU8">
+                                                <rect key="frame" x="0.0" y="1379" width="361" height="88"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Postcode" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Wh-26-ozW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                                        <color key="textColor" name="AppTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="enter postcode" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tD0-fx-2oH" customClass="CustomTextField" customModule="GuardApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="32" width="361" height="56"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="56" id="AOg-1U-sxo"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="AppButtonBorderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcR-tb-hG1" customClass="CustomButton" customModule="GuardApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="924.00000000000011" width="361" height="52"/>
+                                                <rect key="frame" x="0.0" y="1487" width="361" height="52"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="52" id="JYu-h1-FEE"/>
@@ -337,7 +486,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have account? Login account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLx-Qg-4bV">
-                                                <rect key="frame" x="0.0" y="996.00000000000011" width="361" height="19.666666666666629"/>
+                                                <rect key="frame" x="0.0" y="1559" width="361" height="19.666666666666742"/>
                                                 <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="16"/>
                                                 <color key="textColor" name="AppTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -369,17 +518,20 @@
                             <constraint firstItem="U7Q-R2-RzI" firstAttribute="trailing" secondItem="C0y-YW-e7l" secondAttribute="trailing" constant="16" id="uND-LG-bRo"/>
                         </constraints>
                     </view>
-                    <size key="freeformSize" width="393" height="1200"/>
+                    <size key="freeformSize" width="393" height="2500"/>
                     <connections>
                         <outlet property="bottomLabel" destination="YLx-Qg-4bV" id="sui-yk-5qv"/>
-                        <outlet property="cnicTextField" destination="ZII-kP-2Kp" id="sjv-IM-dTJ"/>
                         <outlet property="confirmPasswordTextField" destination="Zqn-Oy-fJx" id="sUM-HB-SiF"/>
-                        <outlet property="contactNumberTextField" destination="jmR-3T-nTI" id="LFS-lr-etB"/>
-                        <outlet property="dateOfBirthTextField" destination="OCH-4Y-MFU" id="gT1-EE-ccf"/>
-                        <outlet property="emailTextField" destination="9fx-75-UwZ" id="wl9-UE-mQP"/>
+                        <outlet property="emailTextField" destination="bfc-wm-l81" id="bwy-u4-qYL"/>
+                        <outlet property="firstNameTextField" destination="67Z-hU-NpW" id="QyV-5P-Udj"/>
+                        <outlet property="genderSegmentControl" destination="WrH-PP-YjC" id="p8y-oS-vDs"/>
+                        <outlet property="middleTextField" destination="CS0-14-IS5" id="qRz-Rd-I2o"/>
+                        <outlet property="mobileNumberTextField" destination="0Bb-nq-5uw" id="7EO-ih-8Yc"/>
+                        <outlet property="nationalInsuranceTextField" destination="0Jm-f1-xun" id="uWK-pj-5hI"/>
                         <outlet property="passwordTextField" destination="SgT-G7-ADJ" id="7VE-96-h7v"/>
-                        <outlet property="uploadLicenseView" destination="a7p-9f-942" id="wV2-Gw-6v7"/>
-                        <outlet property="userNameTextField" destination="ZaK-EE-Nsr" id="Mi1-hq-wKA"/>
+                        <outlet property="surnameTextField" destination="oam-7Z-Bt3" id="awX-CF-ga3"/>
+                        <outlet property="telephoneTextField" destination="8U9-7s-pUU" id="if6-ri-uPO"/>
+                        <outlet property="titleTextField" destination="ZaK-EE-Nsr" id="DvG-Du-04E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fld-mV-VH4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -846,10 +998,382 @@
             </objects>
             <point key="canvasLocation" x="2902" y="-754"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="6e4-oW-Wh4">
+            <objects>
+                <viewController id="lK5-pu-1ku" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="80c-qS-Rv2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kOY-Cs-MF1">
+                                <rect key="frame" x="16" y="82.999999999999986" width="361" height="132.66666666666663"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GuardAppIcon" translatesAutoresizingMaskIntoConstraints="NO" id="VOF-OB-yPq">
+                                        <rect key="frame" x="132.66666666666666" y="0.0" width="96" height="96"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="96" id="A8F-05-aNR"/>
+                                            <constraint firstAttribute="width" constant="96" id="Poe-Mv-vU3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mma-GZ-sVi">
+                                        <rect key="frame" x="97.666666666666671" y="104" width="165.66666666666663" height="28.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2d-8v-ZAF">
+                                <rect key="frame" x="16" y="239.66666666666669" width="361" height="926.33333333333326"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="raE-nO-BJO">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="1015.6666666666666"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="139-mG-MJg">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="88"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfl-NQ-3DJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                                        <color key="textColor" name="AppTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ITK-eK-jep" customClass="CustomTextField" customModule="GuardApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="32.000000000000028" width="361" height="56"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="56" id="ZvN-V1-fJO"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="name"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftViewImage" value="person"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Fbl-Fu-3Jo">
+                                                <rect key="frame" x="0.0" y="108.00000000000003" width="361" height="88"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CNIC" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzN-4M-lg5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                                        <color key="textColor" name="AppTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="123456789090" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uP0-Oq-83u" customClass="CustomTextField" customModule="GuardApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="32" width="361" height="56"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="56" id="fkw-f6-5k0"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="AppButtonBorderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftViewImage" value="cnic"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cfJ-pz-MTz">
+                                                <rect key="frame" x="0.0" y="216" width="361" height="88"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact number" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJx-Ex-wTQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                                        <color key="textColor" name="AppTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="+1 123456789" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ep-bJ-qKa" customClass="CustomTextField" customModule="GuardApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="32" width="361" height="56"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="56" id="bFQ-Ac-hl8"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="AppButtonBorderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftViewImage" value="phone"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="eGY-Hp-5x6">
+                                                <rect key="frame" x="0.0" y="324" width="361" height="88"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of birth" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpF-bN-OVG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                                        <color key="textColor" name="AppTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="SNIC / CNIC" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K3N-OR-MEQ" customClass="CustomTextField" customModule="GuardApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="32" width="361" height="56"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="56" id="Tox-Zi-tg4"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="AppButtonBorderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftViewImage" value="birthday"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="XMT-u2-2KA">
+                                                <rect key="frame" x="0.0" y="432" width="361" height="88"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbc-Sm-Siu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                                        <color key="textColor" name="AppTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username@guard.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SXf-0N-DSp" customClass="CustomTextField" customModule="GuardApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="32" width="361" height="56"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="56" id="Qe0-LC-NbT"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="AppButtonBorderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftViewImage" value="email"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Y4C-uW-y5I">
+                                                <rect key="frame" x="0.0" y="540" width="361" height="88"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7w-Wt-0wZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                                        <color key="textColor" name="AppTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="•••••••••••" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="etN-Hc-FRx" customClass="CustomTextField" customModule="GuardApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="32" width="361" height="56"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="56" id="98C-0Z-FRd"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="AppButtonBorderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftViewImage" value="password"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="rightViewImage" value="eye.slash" catalog="system"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="mM3-XW-kk6">
+                                                <rect key="frame" x="0.0" y="648" width="361" height="88"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm password" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sga-N1-zZh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                                        <color key="textColor" name="AppTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="•••••••••••" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J9Z-Q7-Gsf" customClass="CustomTextField" customModule="GuardApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="32" width="361" height="56"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="56" id="gBF-vP-Bjb"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="AppButtonBorderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftViewImage" value="password"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="rightViewImage" value="eye.slash" catalog="system"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9QL-Ve-e5E">
+                                                <rect key="frame" x="0.0" y="756" width="361" height="148"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BorderViewImage" translatesAutoresizingMaskIntoConstraints="NO" id="R0r-PJ-yhj">
+                                                        <rect key="frame" x="8" y="8" width="345" height="132"/>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="gRu-ra-YW0">
+                                                        <rect key="frame" x="124.33333333333334" y="40.000000000000107" width="112.33333333333334" height="68.333333333333314"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Hsa-Pn-Nm2">
+                                                                <rect key="frame" x="34.333333333333314" y="0.0" width="44" height="44"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="44" id="Dgc-G3-MnD"/>
+                                                                    <constraint firstAttribute="width" constant="44" id="vab-8v-CoL"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload license" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wh2-5x-R9S">
+                                                                <rect key="frame" x="0.0" y="48" width="112.33333333333333" height="20.333333333333329"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKG-ym-lyk">
+                                                        <rect key="frame" x="124.33333333333334" y="40.000000000000107" width="112.33333333333334" height="68.333333333333314"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <connections>
+                                                            <action selector="uploadLicenseAction:" destination="lK5-pu-1ku" eventType="touchUpInside" id="8da-n3-G0Q"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="AppSecondaryColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="gRu-ra-YW0" firstAttribute="centerX" secondItem="R0r-PJ-yhj" secondAttribute="centerX" id="4L8-lb-F42"/>
+                                                    <constraint firstItem="xKG-ym-lyk" firstAttribute="bottom" secondItem="gRu-ra-YW0" secondAttribute="bottom" id="Eph-bt-UlL"/>
+                                                    <constraint firstAttribute="bottom" secondItem="R0r-PJ-yhj" secondAttribute="bottom" constant="8" id="LS9-Z3-sK7"/>
+                                                    <constraint firstItem="xKG-ym-lyk" firstAttribute="trailing" secondItem="gRu-ra-YW0" secondAttribute="trailing" id="NVK-1I-0Fy"/>
+                                                    <constraint firstItem="R0r-PJ-yhj" firstAttribute="top" secondItem="9QL-Ve-e5E" secondAttribute="top" constant="8" id="Rwp-rp-SdT"/>
+                                                    <constraint firstItem="xKG-ym-lyk" firstAttribute="top" secondItem="gRu-ra-YW0" secondAttribute="top" id="VH5-gQ-rB0"/>
+                                                    <constraint firstItem="R0r-PJ-yhj" firstAttribute="leading" secondItem="9QL-Ve-e5E" secondAttribute="leading" constant="8" id="Y0S-M0-O0F"/>
+                                                    <constraint firstItem="gRu-ra-YW0" firstAttribute="centerY" secondItem="R0r-PJ-yhj" secondAttribute="centerY" id="ky9-9C-6Mm"/>
+                                                    <constraint firstAttribute="height" constant="148" id="l4b-KV-jZ9"/>
+                                                    <constraint firstItem="xKG-ym-lyk" firstAttribute="leading" secondItem="gRu-ra-YW0" secondAttribute="leading" id="tvb-Tj-Ahf"/>
+                                                    <constraint firstAttribute="trailing" secondItem="R0r-PJ-yhj" secondAttribute="trailing" constant="8" id="yzW-GS-M45"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRY-se-lCG" customClass="CustomButton" customModule="GuardApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="924.00000000000011" width="361" height="52"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52" id="mzB-Hi-DsU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Create account">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localized" value="Next"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="createAccountAction:" destination="lK5-pu-1ku" eventType="touchUpInside" id="dud-mJ-31Q"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have account? Login account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPX-Mq-xsz">
+                                                <rect key="frame" x="0.0" y="996.00000000000011" width="361" height="19.666666666666629"/>
+                                                <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="16"/>
+                                                <color key="textColor" name="AppTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="raE-nO-BJO" firstAttribute="leading" secondItem="a2d-8v-ZAF" secondAttribute="leading" id="OoL-g2-TZE"/>
+                                    <constraint firstItem="raE-nO-BJO" firstAttribute="width" secondItem="P6e-zm-nkF" secondAttribute="width" id="dZk-K8-iI9"/>
+                                    <constraint firstAttribute="trailing" secondItem="raE-nO-BJO" secondAttribute="trailing" id="jHi-vC-tig"/>
+                                    <constraint firstItem="raE-nO-BJO" firstAttribute="top" secondItem="a2d-8v-ZAF" secondAttribute="top" id="ma9-vc-xqt"/>
+                                    <constraint firstAttribute="bottom" secondItem="raE-nO-BJO" secondAttribute="bottom" constant="50" id="y49-WJ-Eur"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="tDz-iv-gUj"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="P6e-zm-nkF"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XM3-P6-kjf"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a2d-8v-ZAF" firstAttribute="leading" secondItem="XM3-P6-kjf" secondAttribute="leading" constant="16" id="7PA-J6-loV"/>
+                            <constraint firstItem="XM3-P6-kjf" firstAttribute="trailing" secondItem="a2d-8v-ZAF" secondAttribute="trailing" constant="16" id="F6F-At-NXx"/>
+                            <constraint firstItem="kOY-Cs-MF1" firstAttribute="top" secondItem="XM3-P6-kjf" secondAttribute="top" constant="24" id="Hjo-bU-kxD"/>
+                            <constraint firstItem="kOY-Cs-MF1" firstAttribute="leading" secondItem="XM3-P6-kjf" secondAttribute="leading" constant="16" id="Jmf-Fd-cN6"/>
+                            <constraint firstItem="XM3-P6-kjf" firstAttribute="trailing" secondItem="kOY-Cs-MF1" secondAttribute="trailing" constant="16" id="o28-MX-SQE"/>
+                            <constraint firstItem="a2d-8v-ZAF" firstAttribute="top" secondItem="kOY-Cs-MF1" secondAttribute="bottom" constant="24" id="qCR-Si-bw5"/>
+                            <constraint firstItem="XM3-P6-kjf" firstAttribute="bottom" secondItem="a2d-8v-ZAF" secondAttribute="bottom" id="thl-xw-pqr"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="393" height="1200"/>
+                    <connections>
+                        <outlet property="bottomLabel" destination="CPX-Mq-xsz" id="mn0-E0-KaJ"/>
+                        <outlet property="cnicTextField" destination="uP0-Oq-83u" id="Lj0-MP-eQl"/>
+                        <outlet property="confirmPasswordTextField" destination="J9Z-Q7-Gsf" id="1Yb-90-ggk"/>
+                        <outlet property="contactNumberTextField" destination="9ep-bJ-qKa" id="QGW-JR-Ttw"/>
+                        <outlet property="dateOfBirthTextField" destination="K3N-OR-MEQ" id="3I1-XO-FSo"/>
+                        <outlet property="emailTextField" destination="SXf-0N-DSp" id="9oc-2k-PDh"/>
+                        <outlet property="passwordTextField" destination="etN-Hc-FRx" id="hrZ-Xc-DrB"/>
+                        <outlet property="uploadLicenseView" destination="9QL-Ve-e5E" id="M9y-Le-xDv"/>
+                        <outlet property="userNameTextField" destination="ITK-eK-jep" id="dGG-Wq-i4a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iyl-RJ-kMD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="230" y="666"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BorderViewImage" width="936" height="396"/>
         <image name="GuardAppIcon" width="288" height="288"/>
+        <image name="Vector-2" width="12" height="7"/>
         <image name="addIcon" width="132" height="132"/>
         <image name="birthday" width="72" height="72"/>
         <image name="cnic" width="72" height="72"/>
@@ -858,8 +1382,14 @@
         <image name="password" width="72" height="72"/>
         <image name="person" width="72" height="72"/>
         <image name="phone" width="72" height="72"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="AppButtonBorderColor">
             <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppPrimaryColor">
+            <color red="0.13300000131130219" green="0.3880000114440918" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="AppSecondaryColor">
             <color red="0.88599997758865356" green="0.92199999094009399" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

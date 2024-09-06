@@ -43,14 +43,17 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         self.bindViews()
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.isNavigationBarHidden = true
+        emailTextField.text = "khrm.shahzad1994@gmail.com"
+        passwordTextField.text = "123456"
     }
     
     //MARK: - Actions
     @IBAction func loginAction(_ sender: Any) {
-        //navigateToDashboard()
-        self.viewModel.callLogin()
+        self.navigateToForm()
+      //  self.viewModel.callLogin()
     }
     
     func navigateToDashboard() {
@@ -59,6 +62,14 @@ class LoginViewController: UIViewController {
             navigationController.pushViewController(dashboardVC, animated: true)
         }
     }
+    
+        func navigateToForm() {
+            if let navigationController = self.navigationController {
+                let dashboardVC = self.viewControllerFactory.positionDetailViewController(navigationController: navigationController)
+                navigationController.pushViewController(dashboardVC, animated: true)
+            }
+        }
+
     
 }
 
@@ -92,12 +103,13 @@ extension LoginViewController {
         }.store(in: &subscribers)
         
         self.viewModel.$errorMessage.sink { [weak self] errorMessage in
+            if (errorMessage == "") { return }
             self?.showAlert(title: "Error", message: errorMessage)
         }.store(in: &subscribers)
         
         self.viewModel.$isLoggedInSuccessful.sink { [weak self] success in
             if success {
-                self?.navigateToDashboard()
+                self?.navigateToForm()
             }
         }.store(in: &subscribers)
         
